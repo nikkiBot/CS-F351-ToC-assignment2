@@ -1,2 +1,37 @@
 You can use the attached python program to show the syntax tree. You must install  nltk for Python 3 (see https://askubuntu.com/questions/996185/how-can-i-install-nltk-for-python-3)
 You can find more information at https://www.nltk.org/howto/tree.html .
+
+Grammar:
+<program> ::= <declarations> <statement-sequence>
+
+<declarations> ::= int <variable-list> ;
+
+<variable-list> ::= <variable> | <variable> , <variable-list>
+
+<variable> ::= <lowercase-letter> | <lowercase-letter> <variable>
+
+<statement-sequence> ::= <statement> ; | <statement> ; <statement-sequence>
+
+<statement> ::= <read-statement> | <write-statement> | <assignment-statement> | <for-loop>
+
+<read-statement> ::= read <variable>
+
+<write-statement> ::= write <expression>
+
+<assignment-statement> ::= <variable> = <expression>
+
+<for-loop> ::= for ( <expression> ; <expression> ; <expression> ) { <statement-sequence> }
+
+<expression> ::= <operand> | <operand> <binary-operator> <expression> | ( <expression> )
+
+<operand> ::= <variable> | <constant>
+
+<binary-operator> ::= + | - | * | / | > | ==
+
+<variable> ::= <lowercase-letter> | <lowercase-letter> <variable>
+
+<constant> ::= <digit> | <digit> <constant>
+
+<digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+
+<lowercase-letter> ::= a | b | c | ... | z
