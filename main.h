@@ -17,6 +17,6 @@ typedef struct Node {
 void tokenize(char* filename) ;
 Node* create_node(char* value);
 void print_syntax_tree(Node* node, int depth);
+Node* parse_program(char* program, int num_tokens);
 
-
-#endif 
+#endif
