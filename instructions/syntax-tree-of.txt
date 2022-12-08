@@ -1,0 +1,4 @@
+Print the syntax tree in a generalized list format where each list consists of a vertex followed by the lists of its children ordered from left to right. Use [ , ] as left and right parentheses, respectively, for the output generalized list. 
+The generalized list of the syntaxTreeExampleOutput.png parse tree is:
+
+ [s [dp [d [the]] [np [dog]]] [vp [v [chased]] [dp [d [the]] [np [cat]]]]]

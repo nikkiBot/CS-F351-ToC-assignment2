@@ -1,0 +1,2 @@
+You can use the attached python program to show the syntax tree. You must install  nltk for Python 3 (see https://askubuntu.com/questions/996185/how-can-i-install-nltk-for-python-3)
+You can find more information at https://www.nltk.org/howto/tree.html .
